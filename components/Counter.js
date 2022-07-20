@@ -1,7 +1,7 @@
 Vue.component('counter',{
     template:  //html
     `
-    <div>
+    <div class="counter-container">
         <button @click="counterNumber++">+</button>
         <h3>{{counterNumber}}</h3>
         <button @click="counterNumber--">--</button>

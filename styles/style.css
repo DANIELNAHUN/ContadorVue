@@ -1,0 +1,8 @@
+*{
+  padding: 0%;
+}
+.counter-container{
+  display: flex;
+  flex-direction: row;
+  background-color: aqua;
+}
