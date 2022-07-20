@@ -1,15 +1,15 @@
-Vue.component('counter',{
+Vue.component('counter', {
     template:  //html
-    `
+        `
     <div class="counter-container">
         <button @click="counterNumber++">+</button>
         <h3>{{counterNumber}}</h3>
         <button @click="counterNumber--">--</button>
     </div>
     `,
-    data(){
-        return{
-            counterNumber:0
+    data () {
+        return {
+            counterNumber: 0
         }
     }
 

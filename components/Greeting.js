@@ -1,12 +1,12 @@
-Vue.component('greeting',{
+Vue.component('greeting', {
     template: //html
-    `
+        `
     <div>
         <h1>{{greetingText}}</h1>
     </div>
     `,
-    data(){
-        return{
+    data () {
+        return {
             greetingText: 'Hola mundo con Vue'
         }
     }
