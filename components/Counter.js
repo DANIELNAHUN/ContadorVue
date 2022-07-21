@@ -1,23 +1,26 @@
 Vue.component('counter', {
     template:  //html
         `
-    <div class="counter-container">
-        <button @click="counterNumber++">+</button>
-        <h3>{{counterNumber}}</h3>
-        <button @click="counterNumber--">--</button>
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" :style="{width: counterNumber+'%'}"
-            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
-            :class="color">{{counterNumber}}%</div>
+        <div class="main-container">
+            <div class="counter-container">
+                <button @click="counterNumber++">+</button>
+                <h3>{{counterNumber}}</h3>
+                <button @click="counterNumber--">-</button>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" :style="{width: counterNumber+'%'}"
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                :class="color">{{counterNumber}}%</div>
+            </div>
         </div>
-    </div>
+
     `,
     data () {
         return {
             counterNumber: 0
         }
     },
-    computed :{
+    computed: {
         color () {
             return {
                 'bg-success': this.counterNumber <= 10,
