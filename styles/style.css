@@ -2,7 +2,10 @@
   padding: 0%;
 }
 body{
-  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding-top: 150px;
+  justify-content: center;
 }
 .main-container{
   display: flex;
@@ -14,9 +17,18 @@ body{
   flex-direction: row;
   justify-content: center;
 }
-.counter-container button{
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
+.counter-container p{
+  width: 70px;
   padding: 10px 10px;
+  font-size: 20px;
+  text-align: center;
+}
+.counter-container button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: aliceblue;
+  background-color: #9201F3;
+  border: none;
+  padding: 0px 10px;
 }

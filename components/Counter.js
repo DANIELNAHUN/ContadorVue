@@ -4,7 +4,7 @@ Vue.component('counter', {
         <div class="main-container">
             <div class="counter-container">
                 <button @click="counterNumber++">+</button>
-                <h3>{{counterNumber}}</h3>
+                <p>{{counterNumber}}</p>
                 <button @click="counterNumber--">-</button>
             </div>
             <div class="progress">
@@ -23,9 +23,9 @@ Vue.component('counter', {
     computed: {
         color () {
             return {
-                'bg-success': this.counterNumber <= 10,
-                'bg-warning': this.counterNumber > 10 && this.counterNumber < 20,
-                'bg-danger': this.counterNumber >= 20
+                'bg-success': this.counterNumber <= 30,
+                'bg-warning': this.counterNumber > 30 && this.counterNumber < 60,
+                'bg-danger': this.counterNumber >= 60
             }
         }
     }
